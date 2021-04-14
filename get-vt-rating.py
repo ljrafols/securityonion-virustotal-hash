@@ -2,7 +2,7 @@
 Name: Get VT Rating
 Author: Loyd Rafols (ljrafols/lessigen)
 Date Created: Apr 6, 2021
-Date Modified: Apr 7, 2021
+Date Modified: Apr 13, 2021
 
 Reqs: gcc and python3-devel (yum install gcc python3-devel), aiohttp (python3 -m pip install aiohttp)
 
