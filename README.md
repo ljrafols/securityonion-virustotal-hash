@@ -1,6 +1,6 @@
 # Security Onion - VirusTotal API integration script (get-vt-rating)
 
-get-vt-rating is a Python script that creates alerts based on stats provided by the VirusTotal API.
+get-vt-rating is a Python script that creates alerts based on stats provided by the VirusTotal API. This script is intended to assist security analysts in providing actionable intelligence towards incidents, by actively leveraging VirusTotal and its partners in finding new threats that have emerged, that have possibly bypassed an IDS' ruleset due to missing signatures. This will help in creating signatures to mitigate further attacks by new variants of malware.
 
 The script iteratively loops through all files extracted by Zeek (by default, it checks the default SO extracted directory at `/nsm/zeek/extracted/`). Each file that is encountered has an MD5 hash generated and submitted to the VirusTotal API. The results from the API request are used to determine if a file is malicious or not (this is currently set to at least 10 AV engines resulting in "malicious"). In the current iteration, it only logs to the console and to the "`virustotal.log`" file in the CWD, but I plan on integrating it into Security Onion's Alerts dashboard.
 
