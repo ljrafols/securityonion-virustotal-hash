@@ -1,6 +1,6 @@
 # Security Onion - VirusTotal API integration script (get-vt-rating)
 
-get-vt-rating is a Python script that creates alerts based on stats provided by the VirusTotal API. This script is intended to assist security analysts in providing actionable intelligence towards incidents, by actively leveraging VirusTotal and its partners in finding new threats that have emerged, that have possibly bypassed an IDS' ruleset due to missing signatures. This will help in creating signatures to mitigate further attacks by new variants of malware.
+get-vt-rating is a Python script that I wrote for one of my undergrad courses (SPR600) that creates alerts based on stats provided by the VirusTotal API. This script is intended to assist security analysts in providing actionable intelligence towards incidents, by actively leveraging VirusTotal and its partners in finding new threats that have emerged, that have possibly bypassed an IDS' ruleset due to missing signatures. This will help in creating signatures to mitigate further attacks by new variants of malware.
 
 # Script Description
 
@@ -31,7 +31,7 @@ Unfortunately, due to time constraints, I am unable to create more advanced feat
 
 -	Integration into the Security Onion dashboard (through Alerts), or perhaps Kibana as a simpler integration method by means of ingesting a JSON-formatted log file
 -	Non-executable malicious hash detection (such as pictures or source code files that contains malicious payloads)
--	Additional selectable hash algorithm support, or different hash algorithm (ideally SHA-256)
+-	Additional selectable hash algorithm support, or different hash algorithm instead of MD5 (ideally SHA-256)
 
 
 # License
