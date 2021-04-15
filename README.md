@@ -25,6 +25,15 @@ Tested and working on Security Onion 2.3.40.
 - aiohttp (installed automatically through requirements.txt or install manually via "pip install aiohttp")
 - gcc, python3-devel (yum install gcc python3-devel)
 
+# Future Work
+
+Unfortunately, due to time constraints, I am unable to create more advanced features. If I have time and interest in it, future work that would iterate upon the work done on this would include:
+
+-	Integration into the Security Onion dashboard (through Alerts), or perhaps Kibana as a simpler integration method by means of ingesting a JSON-formatted log file
+-	Non-executable malicious hash detection (such as pictures or source code files that contains malicious payloads)
+-	Additional selectable hash algorithm support, or different hash algorithm (ideally SHA-256)
+
+
 # License
 Licensed under GNU GPL v3, found at https://www.gnu.org/licenses/gpl-3.0.txt.
 
